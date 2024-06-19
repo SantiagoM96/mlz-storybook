@@ -28,6 +28,7 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
-    icon: "chevron_right"
+    icon: "",
+    icon2: "chevron_right"
   },
 };
