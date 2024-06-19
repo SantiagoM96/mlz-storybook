@@ -1,0 +1,1 @@
+import"./jsx-runtime-BZf_YgVj.js";import"./index-CEThVCg_.js";const e=document.createElement("link");e.rel="stylesheet";e.href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0";document.head.appendChild(e);const a={parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{a as default};

@@ -28,27 +28,6 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
+    icon: "chevron_right"
   },
-};
-
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-
-export const Warning: Story = {
-  args: {
-    primary: true,
-    label: 'Delete now',
-    backgroundColor: '#123',
-  }
 };

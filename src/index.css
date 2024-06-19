@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/Geometria.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url('./assets/fonts/Geometria-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+body {
+  font-family: 'Geometria', sans-serif;
+}
