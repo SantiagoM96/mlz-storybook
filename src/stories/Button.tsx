@@ -18,7 +18,8 @@ interface ButtonProps {
    */
   label: string;
 
-  icon?: string;
+  leftIcon?: string;
+  rightIcon?: string;
   /**
    * Optional click handler
    */
@@ -33,7 +34,8 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
-  icon = "chevron_right",
+  leftIcon,
+  rightIcon,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -44,7 +46,11 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label} <span className='material-symbols-outlined'>{icon}</span>
+      {leftIcon && <span className='material-symbols-outlined'>{leftIcon}</span>}
+      {label}
+      {rightIcon && <span className='material-symbols-outlined'>{rightIcon}</span>}
     </button>
+
+
   );
 };

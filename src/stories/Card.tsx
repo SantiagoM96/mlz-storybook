@@ -9,7 +9,7 @@ export const Card = () => {
                     <h3 className="card-title">Título</h3>
                     <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quis molestias, soluta provident cup!</p>
                 </div>
-                <Button label="Button" backgroundColor="#"/>
+                <Button label="Ver más" rightIcon="chevron_right"/>
             </div>
         </>
     )
