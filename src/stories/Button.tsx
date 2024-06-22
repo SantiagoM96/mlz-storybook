@@ -1,56 +1,35 @@
 import './button.css';
-
+import "../index.css"
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
+  color?: string;
   label: string;
-
-  leftIcon?: string;
-  rightIcon?: string;
-  /**
-   * Optional click handler
-   */
+  icon?: string;
+  iconPosition?: "left" | "right";
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
   label,
-  leftIcon,
-  rightIcon,
+  backgroundColor,
+  color,
+  icon = "chevron_right",
+  iconPosition = "right",
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className="storybook-button"
+      style={{ backgroundColor, color }}
       {...props}
     >
-      {leftIcon && <span className='material-symbols-outlined'>{leftIcon}</span>}
+      {icon && iconPosition === 'left' && <span className='material-symbols-outlined'>{icon}</span>}
       {label}
-      {rightIcon && <span className='material-symbols-outlined'>{rightIcon}</span>}
+      {icon && iconPosition === 'right' && <span className='material-symbols-outlined'>{icon}</span>}
     </button>
-
 
   );
 };
