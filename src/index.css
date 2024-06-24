@@ -12,6 +12,10 @@
   font-style: bold;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Geometria', sans-serif;
 }

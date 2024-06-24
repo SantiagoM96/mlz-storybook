@@ -1,9 +1,0 @@
-import{r as c}from"./index-CEThVCg_.js";var p={exports:{}},i={};/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var d=c,m=Symbol.for("react.element"),f=Symbol.for("react.fragment"),y=Object.prototype.hasOwnProperty,_=d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,v={key:!0,ref:!0,__self:!0,__source:!0};function u(t,e,o){var r,n={},s=null,a=null;o!==void 0&&(s=""+o),e.key!==void 0&&(s=""+e.key),e.ref!==void 0&&(a=e.ref);for(r in e)y.call(e,r)&&!v.hasOwnProperty(r)&&(n[r]=e[r]);if(t&&t.defaultProps)for(r in e=t.defaultProps,e)n[r]===void 0&&(n[r]=e[r]);return{$$typeof:m,type:t,key:s,ref:a,props:n,_owner:_.current}}i.Fragment=f;i.jsx=u;i.jsxs=u;p.exports=i;var l=p.exports;const x=({label:t,backgroundColor:e,color:o,icon:r,iconPosition:n,...s})=>l.jsxs("button",{type:"button",className:`button ${n==="close"?"button-close":"button-separate"}`,style:{backgroundColor:e,color:o},...s,children:[t,r&&l.jsx("span",{className:"material-symbols-outlined",children:r})]});x.__docgenInfo={description:"",methods:[],displayName:"Button",props:{backgroundColor:{required:!1,tsType:{name:"string"},description:""},color:{required:!1,tsType:{name:"string"},description:""},label:{required:!0,tsType:{name:"string"},description:""},icon:{required:!1,tsType:{name:"string"},description:""},iconPosition:{required:!1,tsType:{name:"union",raw:'"close" | "separate"',elements:[{name:"literal",value:'"close"'},{name:"literal",value:'"separate"'}]},description:""},onClick:{required:!1,tsType:{name:"signature",type:"function",raw:"() => void",signature:{arguments:[],return:{name:"void"}}},description:""}}};export{x as B,l as j};

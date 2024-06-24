@@ -10,6 +10,7 @@ interface CardWithButtonProps {
     buttonLabel: string;
     icon?: string;
     iconPosition?: "close" | "separate";
+    buttonMode?: "ghost" | "solid" | "bordered";
 }
 
 export const CardWithButton = (
@@ -20,7 +21,8 @@ export const CardWithButton = (
         containerBgColor,
         isSolid = false,
         icon = "chevron_forward",
-        iconPosition = "separate" }
+        iconPosition = "separate",
+        buttonMode = "ghost" }
         : CardWithButtonProps) => {
 
     const cardBgColor = isSolid && containerBgColor === "#236999" ? "#fff" : undefined;
@@ -28,9 +30,8 @@ export const CardWithButton = (
 
     return (
         <>
-            <div style={{ backgroundColor: containerBgColor }} className="main-container">
-                <div className={`card-container 
-                    ${cardBgColor ? "card-container-solid"
+            <section style={{ backgroundColor: containerBgColor }} className="main-container">
+                <div className={`card-container ${cardBgColor ? "card-container-solid"
                         : containerBgColor === "#fff" ? "card-container-light"
                             : "card-container-transparent-blue"}`}>
                     <div className="card-text-container">
@@ -41,9 +42,9 @@ export const CardWithButton = (
                                 ? "card-text-dark"
                                 : "card-text-blue"}`}>{content}</p>
                     </div>
-                    <Button label={buttonLabel} icon={icon} iconPosition={iconPosition} color={textColor} />
+                    <Button label={buttonLabel} icon={icon} color={textColor} iconPosition={iconPosition} mode={buttonMode} />
                 </div>
-            </div>
+            </section>
         </>
     );
 }

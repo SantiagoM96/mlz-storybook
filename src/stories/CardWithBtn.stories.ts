@@ -14,21 +14,21 @@ export default meta;
 
 export const LightMode: StoryObj = {
   args: {
-    content: 'This is the content of the card displayed in light mode.',
+    content: 'Este es el contenido de la tarjeta mostrada en modo claro con un fondo blanco.',
     containerBgColor: "#fff"
   },
 };
 
 export const BlueMode: StoryObj = {
   args: {
-    content: 'This is the content of the card displayed in blue mode.',
+    content: 'Este es el contenido de la tarjeta mostrada en modo transparente con un fondo azul.',
     containerBgColor: "#236999"
   },
 };
 
 export const SolidMode: StoryObj = {
   args: {
-    content: 'This is the content of the card displayed in blue solid mode.',
+    content: 'Este es el contenido de la tarjeta mostrada en modo sólido con un fondo azul.',
     containerBgColor: "#236999",
     isSolid: true,
   },

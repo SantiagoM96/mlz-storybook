@@ -17,8 +17,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Ghost: Story = {
   args: {
-    label: 'Button',
+    label: 'Button Ghost',
+  },
+};
+
+export const Solid: Story = {
+  args: {
+    label: 'Button Solid',
+    mode: "solid",
+  },
+};
+
+export const Bordered: Story = {
+  args: {
+    label: 'Button Bordered',
+    mode: "bordered",
   },
 };
