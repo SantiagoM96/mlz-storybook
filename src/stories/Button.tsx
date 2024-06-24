@@ -5,7 +5,7 @@ interface ButtonProps {
   color?: string;
   label: string;
   icon?: string;
-  iconPosition?: "left" | "right";
+  iconPosition?: "close" | "separate";
   onClick?: () => void;
 }
 
@@ -13,22 +13,20 @@ export const Button = ({
   label,
   backgroundColor,
   color,
-  icon = "chevron_right",
-  iconPosition = "right",
+  icon,
+  iconPosition,
   ...props
 }: ButtonProps) => {
-
 
   return (
     <button
       type="button"
-      className="button"
+      className={`button ${iconPosition === "close" ? "button-close" : "button-separate"}`}
       style={{ backgroundColor, color }}
       {...props}
     >
-      {icon && iconPosition === 'left' && <span className='material-symbols-outlined'>{icon}</span>}
       {label}
-      {icon && iconPosition === 'right' && <span className='material-symbols-outlined'>{icon}</span>}
+      {icon && (<span className='material-symbols-outlined'>{icon}</span>)}
     </button>
 
   );

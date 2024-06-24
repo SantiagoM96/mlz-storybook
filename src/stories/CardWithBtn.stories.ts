@@ -12,33 +12,24 @@ const meta = {
 
 export default meta;
 
-export const Primary: StoryObj = {
+export const LightMode: StoryObj = {
   args: {
-    title: 'Card Title',
-    content: 'This is the content of the card with light mode.',
-    buttonLabel: "Ver más",
-    icon: "chevron_forward",
+    content: 'This is the content of the card displayed in light mode.',
     containerBgColor: "#fff"
   },
 };
 
-export const Secondary: StoryObj = {
+export const BlueMode: StoryObj = {
   args: {
-    title: 'Card Title',
-    content: 'This is the content of the card with dark mode.',
-    buttonLabel: "Ver más",
-    icon: "chevron_forward",
+    content: 'This is the content of the card displayed in blue mode.',
     containerBgColor: "#236999"
   },
 };
 
-export const Terciary: StoryObj = {
+export const SolidMode: StoryObj = {
   args: {
-    title: 'Card Title',
-    content: 'This is the content of the card with dark mode.',
-    buttonLabel: "Ver más",
-    icon: "chevron_forward",
+    content: 'This is the content of the card displayed in blue solid mode.',
     containerBgColor: "#236999",
-    cardBgColor: "#fff"
+    isSolid: true,
   },
 };

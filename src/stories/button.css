@@ -6,10 +6,23 @@
   font-family: 'Geometria', sans-serif;
   font-weight: 700;
   border: 0;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   height: 48px;
   width: 100%;
   cursor: pointer;
   min-width: 152px;
   background-color: #ffffff00;
+}
+
+.button-close{
+  justify-content: left;
+  gap: 1rem;
+}
+
+.button-separate{
+  justify-content: space-between;
+}
+
+.button span {
+  padding-top: 4px;
 }
