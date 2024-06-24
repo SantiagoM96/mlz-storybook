@@ -3,18 +3,10 @@ import { fn } from '@storybook/test';
 import { Button } from './Button';
 
 const meta = {
-  title: 'Example/Button',
+  title: 'Button',
   component: Button,
   parameters: {
-
     layout: 'centered',
-    backgrounds: {
-      default: "light",
-      values: [
-        { name: "light", value: "#fff" },
-        { name: "dark", value: "#236999" },
-      ]
-    },
   },
 
   tags: ['autodocs'],

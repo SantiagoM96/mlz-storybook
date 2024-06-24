@@ -22,7 +22,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className="storybook-button"
+      className="button"
       style={{ backgroundColor, color }}
       {...props}
     >

@@ -1,15 +1,15 @@
-.storybook-button {
+.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.125em; /* 18px */
+  font-family: 'Geometria', sans-serif;
+  font-weight: 700;
   border: 0;
   padding: 0 24px;
   height: 48px;
   width: 100%;
   cursor: pointer;
-  font-size: 1em;
-  font-family: 'Geometria', sans-serif;
-  font-weight: bold;
   min-width: 152px;
   background-color: #ffffff00;
 }
